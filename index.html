@@ -1,8 +1,73 @@
-<div style="border:1px solid #ccc; border-radius:8px; overflow:hidden; max-width:1400px; width:100%; height:800px; margin:30px auto;">
-  <iframe src="https://umc.gov-dooray.com/office/drives/3971855165716167130/files/4179910692485171746" style="width:100%; height:100%; border:0; display:block;"></iframe>
-</div>
-<div style="padding:8px; text-align:center; font-size:16px; color:#333;">ㅎㅎ</div>
-<div style="border:1px solid #ccc; border-radius:8px; overflow:hidden; max-width:1400px; width:100%; height:800px; margin:30px auto;">
-  <iframe src="https://umc.gov-dooray.com/office/drives/3971855165716167130/files/4179910692485171746" style="width:100%; height:100%; border:0; display:block;"></iframe>
-</div>
-<div style="padding:8px; text-align:center; font-size:16px; color:#333;">ㅎㅎ</div>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UMC Dooray Embed</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: auto; /* 페이지 자체가 세로 스크롤 가능 */
+    font-family: "Pretendard", "Noto Sans KR", sans-serif;
+    background: #fafafa;
+  }
+
+  .frame-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 0;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .iframe-box {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: auto; /* 내부 iframe이 넘칠 때 자체 스크롤 가능 */
+    width: 100%;
+    height: 800px;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+  }
+
+  .caption {
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    margin-top: 8px;
+  }
+</style>
+</head>
+<body>
+  <div class="frame-container">
+
+    <div class="iframe-box">
+      <iframe 
+        src="https://umc.gov-dooray.com/office/drives/3971855165716167130/files/4179910692485171746"
+        scrolling="yes">
+      </iframe>
+    </div>
+    <div class="caption">ㅎㅎ 첫 번째 프레임</div>
+
+    <div class="iframe-box">
+      <iframe 
+        src="https://umc.gov-dooray.com/office/drives/3971855165716167130/files/4179910692485171746"
+        scrolling="yes">
+      </iframe>
+    </div>
+    <div class="caption">ㅎㅎ 두 번째 프레임</div>
+
+  </div>
+</body>
+</html>
