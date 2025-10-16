@@ -20,6 +20,24 @@
     margin-top: 40px;
   }
 
+  /* 주의사항 박스 스타일 */
+  .notice-box {
+    max-width: 900px;
+    margin: 18px auto;
+    background: linear-gradient(180deg, #fffef0, #fff7e0);
+    border-left: 6px solid #ff9900;
+    padding: 14px 18px;
+    border-radius: 8px;
+    color: #444;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    font-size: 16px;
+  }
+  .notice-box strong {
+    color: #b35a00;
+    font-weight:700;
+    margin-right:8px;
+  }
+
   .menu {
     display: flex;
     justify-content: center;
@@ -96,6 +114,8 @@
 <body>
 
   <h1>📚 전사 관리 대장 리스트</h1>
+
+  <div class="notice-box"><strong>주의</strong> 반드시 협업시스템에 로그인을 하셔야 문서를 보실 수 있습니다.</div>
 
   <div class="menu">
     <button onclick="openPopup('📘 전사 교육관리', 'https://umc.gov-dooray.com/office/drives/4052235041576520491/files/4113287674040598452')">
